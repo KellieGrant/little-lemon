@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+h1 {
+  font-size: 40pt;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 36pt;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18pt;
+  font-weight: medium;
+}

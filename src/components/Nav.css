@@ -1,0 +1,36 @@
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, links take remaining space */
+    align-items: center;
+    background-color: #f4f4f4; /* Light background for the nav */
+    padding: 1rem 2rem; /* Spacing around the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow under the navbar */
+  }
+  
+  nav img {
+    height: 50px; /* Adjusts the logo size */
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto); /* Each nav item takes auto width */
+    justify-content: center; /* Aligns the links to the right */
+    list-style-type: none; /* Removes the default bullet points */
+    gap: 1.5rem; /* Space between each list item */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Text color */
+    font-size: 1.1rem; /* Adjusts the font size */
+    padding: 0.5rem 1rem; /* Adds some padding around the links */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  nav ul li a:hover {
+    color: #495e57; /* Changes text color on hover */
+    background-color: #f4ce14; /* Background color on hover */
+    border-radius: 4px; /* Slight rounding of the edges */
+  }
