@@ -1,6 +1,8 @@
 import React from 'react';
 import './Main.css';
-import hero from '../images/restaurant.jpg'
+import hero from '../images/restauranfood.jpg';
+import food1 from '../images/food2.jpeg';
+import food2 from '../images/food3.jpeg';
 
 const Main = () => {
   return (
@@ -32,14 +34,21 @@ const Main = () => {
 
       </div>
 
-      <div className='about-content'>
+      <div className="about-content">
+        <div className="text-content">
+          <h1>Little Lemon</h1>
+          <h2>Chicago</h2>
+          <p>
+            Little Lemon opened in 1995 by two Italian brothers, Adrian and Mario. Despite the city's diversity, the two brothers recognized the lack of Mediterranean cuisine in Chicago, and were inspired to bring the flavors of their hometown in Italy to the people of Chicago. The two brothers continue to oversee the Little Lemon restaurant, nearly thirty years later.
+          </p>
+        </div>
 
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-        <p>Lorem ipsum dolor sit amet. Eos inventore harum et eaque repellat ut saepe iste! Qui optio corrupti a molestias aliquam est voluptatem quam et harum dicta. Et sapiente similique non voluptas ipsam ut dolorum iste qui unde maiores. Eum quia alias aut aspernatur earum nam consequuntur explicabo ea autem ullam ea consectetur amet ex deleniti rerum hic magnam laborum.</p>
-
+        <div className='about-section image-section'>
+          <img className='image1' src={food1} alt='Image of food' />
+          <img className='image2' src={food2} alt='Image of food' />
+        </div>
       </div>
-
+ 
     </main>
   );
 };
