@@ -17,7 +17,7 @@
 .hero-section h2,
 .hero-section p,
 .hero-section button {
-    margin: 0 10rem 0; /* Consistent bottom margin */
+    margin: 0 10rem 0;
     text-align: left;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .image-section img {
-    width: 40%;
+    width: 80%;
     height: auto;
     position: relative;
     border-radius: 16px;
@@ -112,6 +112,61 @@
     padding-bottom: 2rem;
 }
 
+/*Testimonials Section*/
+
+.testimonials-section {
+    text-align: center; 
+    padding: 20px;
+    color: #f4ce14;
+    background-color: #495e57;
+  }
+  
+  .testimonials-heading {
+    margin-bottom: 20px; 
+  }
+  
+  .testimonials-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 30px;
+  }
+  
+  .testimonials-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+  }
+
+  .testimonials-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .testimonials-card h4 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .testimonials-card p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .stars {
+    color: #f4ce14;
+    margin-bottom: 10px;
+  }
 
 /*About Section*/
 

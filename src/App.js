@@ -13,8 +13,7 @@ function App() {
     <>
       <Nav />
       <Main />
-      <Footer />
-      
+      <Footer />      
     </>
   );
 }

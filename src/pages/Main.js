@@ -4,6 +4,8 @@ import hero from '../images/restauranfood.jpg';
 import DishList from '../components/DishList';
 import food1 from '../images/food2.jpeg';
 import food2 from '../images/food3.jpeg';
+import profile from '../images/profilepic.jpg';
+
 
 const Main = () => {
   return (
@@ -33,9 +35,43 @@ const Main = () => {
         <DishList />
       </div>
 
-      <div className='testimonials-content'>
+      <div className='testimonials-section'>
 
+        <div className='testimonials-heading'>
+          <h2>Testimonials</h2>
+        </div>
+        
+        <div className='testimonials-container'>
 
+          <div className='testimonials-card'>
+            <div className='stars'>★★★★★</div>
+            <img src={profile} alt='Sabrina L.' />
+            <h4>Sabrina L.</h4>
+            <p>"The atmosphere was out of this world!"</p>
+          </div>
+
+          <div className='testimonials-card'>
+            <div className='stars'>★★★★★</div>
+            <img src={profile} alt='Faith P.' />
+            <h4>Faith P.</h4>
+            <p>"The food was exceptional!"</p>
+          </div>
+
+          <div className='testimonials-card'>
+            <div className='stars'>★★★★★</div>
+            <img src={profile} alt='Ryan B.' />
+            <h4>Ryan B.</h4>
+            <p>"The staff are so friendly!"</p>
+          </div>
+
+          <div className='testimonials-card'>
+            <div className='stars'>★★★★★</div>
+            <img src={profile} alt='Peter B.' />
+            <h4>Peter B.</h4>
+            <p>"The food was so authentic!"</p>
+          </div>
+
+        </div>
       </div>
 
       <div className="about-content">
