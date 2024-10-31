@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Medium";
+    src: local("MarkaziText"),
+        url("../fonts/MarkaziText-Medium.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: local("Karla-Regular"),
+        url("../fonts/Karla-Regular.ttf") format(truetype);
+}
+
+h1 {
+    font-family: "MarkaziText";
+    font-size: 40pt;
+}
+
+h2 {
+    font-family: "Regular";
+    font-size: 32pt;
+}
+
+p {
+    font-family: "Regular";
+    font-size: 18pt;
+}
+
+.confirmation-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    min-height: 70vh;
+}
+
+.confirmation-image {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: #f4ce14;
+}
+
+h4 {
+    font-size: large;
+}

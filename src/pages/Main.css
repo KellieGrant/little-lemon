@@ -1,3 +1,29 @@
+@font-face {
+    font-family: "Medium";
+    src: local("MarkaziText"),
+        url("../fonts/MarkaziText-Medium.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: local("Karla-Regular"),
+        url("../fonts/Karla-Regular.ttf") format(truetype);
+}
+
+h1 {
+    font-family: "MarkaziText";
+    font-size: 40pt;
+}
+
+h2 {
+    font-family: "Regular";
+    font-size: 32pt;
+}
+
+p {
+    font-family: "Regular";
+    font-size: 18pt;
+}
 /* Hero Section */
 
 .hero-content {
@@ -82,16 +108,22 @@
 .specials {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    align-items: center;
     padding-top: 2rem;
+    gap: 1rem;
 }
 
 .specials h2 {
-    justify-content: center;
+    justify-content: left;
+    margin: auto;
+}
+
+.specials .menu-button {
     margin: auto;
 }
 
 .specials button {
+    justify-content: center;
     margin: auto;
     padding: 1rem 5rem;
     border: 0;
@@ -198,6 +230,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3.5rem;
 }
 
 .about-section .image1,

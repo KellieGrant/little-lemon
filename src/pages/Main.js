@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.css';
 import hero from '../images/restauranfood.jpg';
 import DishList from '../components/DishList';
+import { Link } from 'react-router-dom';
 import food1 from '../images/food2.jpeg';
 import food2 from '../images/food3.jpeg';
 import profile from '../images/profilepic.jpg';
@@ -28,7 +29,11 @@ const Main = () => {
 
       <div className='specials'>
         <h2>Specials</h2>
-        <button>Online Menu</button>
+        <div className='menu-button'>
+          <Link to="/menu">
+          <button>Online Menu</button>
+          </Link>
+        </div>
       </div>
 
       <div className='dishList'>
@@ -38,7 +43,7 @@ const Main = () => {
       <div className='testimonials-section'>
 
         <div className='testimonials-heading'>
-          <h2>Testimonials</h2>
+          <h1>Testimonials</h1>
         </div>
         
         <div className='testimonials-container'>
@@ -84,8 +89,8 @@ const Main = () => {
         </div>
 
         <div className='about-section image-section'>
-          <img className='image1' src={food1} alt='Image of food' />
-          <img className='image2' src={food2} alt='Image of food' />
+          <img className='image1' src={food1} alt='Food' />
+          <img className='image2' src={food2} alt='Food' />
         </div>
       </div>
  

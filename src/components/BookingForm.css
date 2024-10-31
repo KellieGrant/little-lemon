@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Medium";
+  src: local("MarkaziText"),
+      url("../fonts/MarkaziText-Medium.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("Karla-Regular"),
+      url("../fonts/Karla-Regular.ttf") format(truetype);
+}
+
+h1 {
+  font-family: "MarkaziText";
+  font-size: 40pt;
+}
+
+h2 {
+  font-family: "Regular";
+  font-size: 32pt;
+}
+
+p {
+  font-family: "Regular";
+  font-size: 18pt;
+}
+
+/*Header*/
+
+.reserve-table {
+    position: relative;
+    text-align: center;
+    color: #f4ce14;
+  }
+  
+  .header-reserve {
+    width: 100vw; /* width of container */
+    height: 20rem; /* height of container */
+    object-fit: cover;
+  }
+  
+  .reserve-header-text {
+    background-color: #495e57;
+    padding: 0 3rem 0 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    border-radius: 16px;
+  }
+
+  /*Form*/
+
+  .reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0 0.5rem 0;
+    margin: 0 25rem 0 25rem;
+    text-align: center;
+  }
+  
+  .reservation-form > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .comments {
+    text-align: center;
+  }
+
+  .book-table {
+    align-content: center;
+    text-align: center;
+  }
+
+  .book-table button {
+    margin: 2rem;
+    padding: 1rem 5rem;
+    width: auto;
+    justify-items: center;
+    border: 0;
+    border-radius: 16px;
+    background-color: #f4ce14;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .book-table button:hover {
+    box-shadow: 4px 8px 12px rgba(0,0,0,0.3);
+  }
+
+  .reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+    border-color: #ffc107;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.reservation-form input::placeholder,
+.reservation-form textarea::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
