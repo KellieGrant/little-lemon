@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './BookingForm.css';
 import restaurant from "../images/restaurant.jpg";
 
 export default function ReservationForm(props) {
+  const navigate = useNavigate();
+
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,21 +14,22 @@ export default function ReservationForm(props) {
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
   const [comments, setComments] = useState("");
+  const [finalTime, setFinalTime] = useState([]);
 
-  const [finalTime, setFinalTime] = useState(
-    props.availableTimes.map((times, index) => <option key={index}>{times}</option>)
-  );
+  // Update finalTime each time props.availableTimes changes
+  useEffect(() => {
+    setFinalTime(props.availableTimes.map((time, index) => <option key={index}>{time}</option>));
+  }, [props.availableTimes]);
 
   function handleDateChange(e) {
     setDate(e.target.value);
     const selectedDate = new Date(e.target.value);
     props.updateTimes(selectedDate);
-    setFinalTime(props.availableTimes.map((times, index) => <option key={index}>{times}</option>));
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Handle the form submission logic here
+    navigate("/confirmation");
   }
 
   return (
